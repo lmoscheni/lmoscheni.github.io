@@ -106,6 +106,8 @@ header .nav-bar .nav-items ul li a:hover {
 .container .hero img {
   display: inline-block;
   width: 300px;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .container .hero .hero-description {
@@ -172,5 +174,49 @@ header .nav-bar .nav-items ul li a:hover {
     opacity: 1;
     margin-top: 0;
   }
+}
+
+footer {
+  color: #eee;
+  padding: 1.5rem;
+  background-color: #1f1d1d;
+}
+
+footer .social-contact {
+  text-align: center;
+}
+
+footer .social-contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .social-contact ul li {
+  margin: .7rem;
+  font-weight: bold;
+}
+
+footer .social-contact ul li a {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+footer .social-contact ul li a:hover {
+  color: red;
+}
+
+footer p {
+  font-style: italic;
 }
 /*# sourceMappingURL=main.css.map */

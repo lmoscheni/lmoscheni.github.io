@@ -84,6 +84,7 @@ header {
     img {
       display: inline-block;
       width: 300px;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
     }
 
     .hero-description {
@@ -137,5 +138,43 @@ header {
         opacity: 1; margin-top: 0;
       }
     }
+  }
+}
+
+footer {
+  color: #eee;
+  padding: 1.5rem;
+  background-color: rgb(31, 29, 29);
+
+  .social-contact {
+    text-align: center;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        margin: .7rem;
+        font-weight: bold;
+
+        a {
+          text-decoration : inherit;
+          color : inherit;
+          cursor : pointer;
+
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+  p {
+    font-style: italic;
   }
 }
