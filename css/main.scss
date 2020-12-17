@@ -30,8 +30,12 @@ header {
         cursor : pointer;
 
         &:hover {
-          color: red;
+          color: #815ab3;
         }
+      }
+
+      .logo-init {
+        color: #815ab3;
       }
     }
 
@@ -58,7 +62,7 @@ header {
             cursor : pointer;
 
             &:hover {
-              color: red;
+              color: #815ab3;
             }
           }
         }
@@ -110,6 +114,10 @@ header {
       margin-bottom: 1em;
     }
 
+    h2::first-letter {
+      color: #815ab3;
+    }
+
     summary {
       padding: 1em;
       border-radius: .5em;
@@ -121,7 +129,7 @@ header {
       cursor: pointer;
 
       &:hover {
-        background-color: rgba(51, 48, 48, 0.911);
+        background-color: rgb(129, 90, 179);
       }
     }
 
@@ -167,7 +175,7 @@ footer {
           cursor : pointer;
 
           &:hover {
-            color: red;
+            color: #815ab3;
           }
         }
       }

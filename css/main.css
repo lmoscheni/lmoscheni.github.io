@@ -38,7 +38,11 @@ header .nav-bar .logo a {
 }
 
 header .nav-bar .logo a:hover {
-  color: red;
+  color: #815ab3;
+}
+
+header .nav-bar .logo .logo-init {
+  color: #815ab3;
 }
 
 header .nav-bar .nav-items {
@@ -74,7 +78,7 @@ header .nav-bar .nav-items ul li a {
 }
 
 header .nav-bar .nav-items ul li a:hover {
-  color: red;
+  color: #815ab3;
 }
 
 .container {
@@ -134,6 +138,10 @@ header .nav-bar .nav-items ul li a:hover {
   margin-bottom: 1em;
 }
 
+.container section h2::first-letter {
+  color: #815ab3;
+}
+
 .container section summary {
   padding: 1em;
   border-radius: .5em;
@@ -146,7 +154,7 @@ header .nav-bar .nav-items ul li a:hover {
 }
 
 .container section summary:hover {
-  background-color: rgba(51, 48, 48, 0.911);
+  background-color: #815ab3;
 }
 
 .container section details[open] summary ~ * {
@@ -213,7 +221,7 @@ footer .social-contact ul li a {
 }
 
 footer .social-contact ul li a:hover {
-  color: red;
+  color: #815ab3;
 }
 
 footer p {
