@@ -21,6 +21,7 @@
       sizes="16x16"
       type="image/png"
     />
+    <script src="./js/index.js"></script>
     <title>Leandro Moscheni</title>
   </head>
   <body>
@@ -32,7 +33,8 @@
         <div class="nav-items">
           <ul>
             <li><a href="#about"> About </a></li>
-            <li>
+            <li><a href="#contact"> Contact </a></li>
+            <li class="hide-on-mobile">
               <a
                 href="https://www.linkedin.com/in/leandromoscheni/"
                 target="_blank"
@@ -40,7 +42,7 @@
                 <i class="fab fa-linkedin fa-2x"></i>
               </a>
             </li>
-            <li>
+            <li class="hide-on-mobile">
               <a href="https://www.github.com/lmoscheni" target="_blank">
                 <i class="fab fa-github fa-2x"></i>
               </a>
@@ -66,7 +68,7 @@
           alt="profile picture"
         />
       </div>
-      <section id="about">
+      <section id="about" class="about">
         <h1>About</h1>
         <section>
           <h2>Intro</h2>
@@ -164,6 +166,43 @@
             </div>
           </details>
         </section>
+      </section>
+      <section id="contact" class="contact">
+        <h1>Contact me</h1>
+        <div class="form-container">
+          <form
+            name="contact-form"
+            action="https://formspree.io/f/xgeprelq"
+            method="POST"
+            onsubmit="return validateForm()"
+          >
+            <label name="name"> Your name </label>
+            <input
+              type="text"
+              name="name"
+              maxlength="30"
+              required
+            />
+
+            <label name="_replyto"> Your email </label>
+            <input
+              type="text"
+              name="_replyto"
+              maxlength="45"
+              required
+            />
+
+            <label name="message"> Your message </label>
+            <textarea
+              name="message"
+              maxlength="750"
+              minlength="30"
+              required
+            ></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </section>
     </div>
     <footer>
