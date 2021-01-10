@@ -338,7 +338,7 @@ footer p {
   /* Increase font size */
 }
 
-.toTopButton:hover {
+.toTopButton:hover:focus {
   background-color: #1f1d1d;
   /* Add a dark-grey background on hover */
 }
