@@ -55,6 +55,8 @@ header {
         li {
           margin: 0.5rem;
           font-weight: bold;
+          margin-left: 1.7em;
+          margin-right: 1.7em;
 
           a {
             text-decoration: inherit;
@@ -157,6 +159,8 @@ header {
   .form-container {
     display: flex;
     justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 
     form {
       display: flex;
@@ -243,8 +247,16 @@ footer {
   }
 }
 
-@media (max-width:415px) {
+@media (max-width: 550px) {
   .hide-on-mobile {
     display: none;
+  }
+  .form-container {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .nav-items ul li {
+    margin-left: 1em !important;
+    margin-right: 1em !important;
   }
 }
