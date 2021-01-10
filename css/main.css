@@ -338,8 +338,10 @@ footer p {
   /* Increase font size */
 }
 
-.toTopButton:hover:focus {
-  background-color: #1f1d1d;
-  /* Add a dark-grey background on hover */
+@media (hover: hover) {
+  .toTopButton:hover {
+    background-color: #1f1d1d;
+    /* Add a dark-grey background on hover */
+  }
 }
 /*# sourceMappingURL=main.css.map */
