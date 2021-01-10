@@ -285,7 +285,7 @@ footer {
 }
 
 @media (hover: hover) {
-  .toTopButton:hover:active {
+  .toTopButton:hover:focus:active {
     background-color: $secondary-color; /* Add a dark-grey background on hover */
   }
 }
