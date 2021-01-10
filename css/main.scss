@@ -1,7 +1,12 @@
+$base-color: #eee;
+$secondary-color: rgb(31, 29, 29);
+$accent-color: #815ab3;
+
+
 html,
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #eee;
+  background-color: $base-color;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -31,12 +36,12 @@ header {
         cursor: pointer;
 
         &:hover {
-          color: #815ab3;
+          color: $accent-color;
         }
       }
 
       .logo-init {
-        color: #815ab3;
+        color: $accent-color;
       }
     }
 
@@ -65,7 +70,7 @@ header {
             cursor: pointer;
 
             &:hover {
-              color: #815ab3;
+              color: $accent-color;
             }
           }
         }
@@ -118,7 +123,7 @@ header {
     }
 
     h2::first-letter {
-      color: #815ab3;
+      color: $accent-color;
     }
   }
 
@@ -126,7 +131,7 @@ header {
     summary {
       padding: 1em;
       border-radius: 0.5em;
-      color: #eee;
+      color: $base-color;
       background-color: rgba(31, 29, 29, 0.911);
       font-weight: bold;
       margin-bottom: 1em;
@@ -179,9 +184,9 @@ header {
         padding: 0.7em;
         border-radius: 0.5em;
         border: none;
-        color: #eee;
+        color: $base-color;
         font-weight: bold;
-        background-color: #815ab3;
+        background-color: $accent-color;
       }
 
       button:hover {
@@ -211,9 +216,9 @@ header {
 }
 
 footer {
-  color: #eee;
+  color: $base-color;
   padding: 1.5rem;
-  background-color: rgb(31, 29, 29);
+  background-color: $secondary-color;
 
   .social-contact {
     text-align: center;
@@ -236,7 +241,7 @@ footer {
           cursor: pointer;
 
           &:hover {
-            color: #815ab3;
+            color: $accent-color;
           }
         }
       }
@@ -272,8 +277,8 @@ footer {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #815ab3; /* Set a background color */
-  color: white; /* Text color */
+  background-color: $accent-color; /* Set a background color */
+  color: $base-color; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   border-radius: 50%; /* Rounded corners */
   font-size: 25px; /* Increase font size */
@@ -281,6 +286,6 @@ footer {
 
 @media (hover: hover) {
   .toTopButton:hover {
-    background-color: rgb(31, 29, 29); /* Add a dark-grey background on hover */
+    background-color: $secondary-color; /* Add a dark-grey background on hover */
   }
 }
