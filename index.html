@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -73,13 +73,33 @@
         <section>
           <h2>Intro</h2>
           <p>
-            As Software Engineer i had to face to many and varied projects, from
-            the backend of a credit risk system, to the frontend of an OOT
-            application as direcTV play.
+            I'm Leandro and I'm 27. I'm born in Buenos Aires, Argentina and I
+            live here until now.
+          </p>
+          <p>I love listen music, take long walks and shoot a lot of photos!</p>
+          <p>My favorites drinks are Coffee, Coke and Fernet with Coke.</p>
+          <p>
+            I like too much travel and discovery new places and cultures, I
+            really love meet with new peeple, drink a beer and talk about life.
+          </p>
+          <p>
+            As Software Engineer I love understand all technical process around
+            the project. I like interact with UX, UI, Product and Enginering
+            teams. I'm probably a really tech guy, with strong preference of
+            JavaScript/TypeScript stack.
+          </p>
+          <p>
+            And finally I have to say that I'm love talk! Both in my personal
+            and professional life a good communication it's essencial.
           </p>
         </section>
         <section>
           <h2>Experience</h2>
+          <p>
+            As Software Engineer I had to face to many and varied projects, from
+            the backend of a credit risk system, to the frontend of an OOT
+            application as direcTV play.
+          </p>
           <details>
             <summary>Despegar - Changes Non Air - Sr Software Engineer</summary>
             <div class="content">
@@ -169,43 +189,50 @@
       </section>
       <section id="contact" class="contact">
         <h1>Contact me</h1>
-        <div class="form-container">
-          <form
-            name="contact-form"
-            action="https://formspree.io/f/xgeprelq"
-            method="POST"
-            onsubmit="return validateForm()"
-          >
-            <label name="name"> Your name </label>
-            <input
-              type="text"
-              name="name"
-              maxlength="30"
-              required
-            />
+        <h2>Contact Form</h2>
+        <div class="container">
+          <div class="form-container">
+            <form
+              name="contact-form"
+              action="https://formspree.io/f/xgeprelq"
+              method="POST"
+              onsubmit="return validateForm()"
+            >
+              <label name="name"> Your name </label>
+              <input type="text" name="name" maxlength="30" required />
 
-            <label name="_replyto"> Your email </label>
-            <input
-              type="text"
-              name="_replyto"
-              maxlength="45"
-              required
-            />
+              <label name="_replyto"> Your email </label>
+              <input type="text" name="_replyto" maxlength="45" required />
 
-            <label name="message"> Your message </label>
-            <textarea
-              name="message"
-              maxlength="750"
-              minlength="30"
-              required
-            ></textarea>
+              <label name="message"> Your message </label>
+              <textarea
+                name="message"
+                maxlength="750"
+                minlength="30"
+                required
+              ></textarea>
 
-            <button type="submit">Send</button>
-          </form>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.26483370336!2d-58.503338475504414!3d-34.61580373610127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1613246264851!5m2!1ses!2sar"
+              width="auto"
+              height="auto"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
         </div>
       </section>
     </div>
-    <button class="toTopButton" onclick="topFunction()" id="toTopButton">👆</button>
+    <button class="toTopButton" onclick="topFunction()" id="toTopButton">
+      👆
+    </button>
     <footer>
       <div class="social-contact">
         <h2>Keep in touch!</h2>

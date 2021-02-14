@@ -2,7 +2,6 @@ $base-color: #eee;
 $secondary-color: rgb(31, 29, 29);
 $accent-color: #815ab3;
 
-
 html,
 body {
   font-family: "Nunito", sans-serif;
@@ -91,6 +90,7 @@ header {
     align-items: center;
     width: 100%;
     margin: 0;
+    margin-bottom: 5rem;
     padding: 0;
 
     img {
@@ -102,7 +102,7 @@ header {
     .hero-description {
       display: inline-block;
       text-align: left;
-      max-width: 600px;
+      max-width: 695px;
 
       h1 {
         font-size: 1.8rem;
@@ -116,6 +116,7 @@ header {
   }
 
   section {
+    margin-bottom: 5rem;
     width: 100%;
     h1 {
       font-size: 2rem;
@@ -134,6 +135,9 @@ header {
       color: $base-color;
       background-color: rgba(31, 29, 29, 0.911);
       font-weight: bold;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
       margin-bottom: 1em;
       outline: none;
       cursor: pointer;
@@ -162,54 +166,80 @@ header {
 }
 
 .contact {
-  .form-container {
+  width: 100%;
+  .container {
     display: flex;
-    justify-content: center;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-
-    form {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    .form-container {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-content: space-around;
-      width: 350px;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
 
-      .invalid-input {
-        border-bottom: 1px solid red;
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+        width: 350px;
+
+        .invalid-input {
+          border-bottom: 1px solid red;
+        }
+
+        button {
+          margin: 15px 0;
+          padding: 0.7em;
+          border-radius: 0.5em;
+          border: none;
+          color: $base-color;
+          font-weight: bold;
+          background-color: $accent-color;
+        }
+
+        button:hover {
+          background-color: rgba(31, 29, 29, 0.76);
+        }
+
+        label {
+          font-weight: bold;
+          margin-bottom: 0.2em;
+        }
+
+        input {
+          border-radius: 0.5em;
+          border: none;
+          margin-bottom: 1em;
+          height: 2.2em;
+        }
+
+        textarea {
+          border-radius: 0.5em;
+          border: none;
+          height: 10em;
+          margin-bottom: 1em;
+        }
       }
+    }
+    .map-container {
+      flex-grow: 1;
+      min-width: 350px;
+      min-height: 370px;
 
-      button {
-        margin: 15px 0;
-        padding: 0.7em;
-        border-radius: 0.5em;
-        border: none;
-        color: $base-color;
-        font-weight: bold;
-        background-color: $accent-color;
-      }
+      margin-top: 3rem;
+      margin-bottom: 3rem;
 
-      button:hover {
-        background-color: rgba(31, 29, 29, 0.76);
-      }
-
-      label {
-        font-weight: bold;
-        margin-bottom: 0.2em;
-      }
-
-      input {
-        border-radius: 0.5em;
-        border: none;
-        margin-bottom: 1em;
-        height: 2.2em;
-      }
-
-      textarea {
-        border-radius: 0.5em;
-        border: none;
-        height: 10em;
-        margin-bottom: 1em;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      
+      iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
       }
     }
   }
@@ -254,16 +284,44 @@ footer {
 }
 
 @media (max-width: 550px) {
+  section h1 {
+    text-align: center;
+  }
   .hide-on-mobile {
     display: none;
   }
+
+  .hero img {
+    margin-top: 3em !important;
+  }
+
+  .hero-description h1 {
+    text-align: center;
+    margin-bottom: 1.7em !important;
+  }
+
   .form-container {
-    margin-top: 1rem !important;
+    margin-top: 4rem !important;
     margin-bottom: 1rem !important;
   }
   .nav-items ul li {
     margin-left: 1em !important;
     margin-right: 1em !important;
+  }
+  .contact {
+    .container {
+      .form-container{
+        min-width: 300px !important;
+        margin-left: 1em !important;
+        margin-right: 1em !important;
+      }
+
+      .map-container {
+        width: 300px !important;
+        margin-left: 3rem !important;
+        margin-right: 3rem !important;
+      }
+    }
   }
 }
 
