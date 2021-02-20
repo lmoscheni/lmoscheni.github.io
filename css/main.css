@@ -387,6 +387,15 @@ footer p {
   /* Increase font size */
 }
 
+.topButtonIcon {
+  border: solid #eee;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
 @media (hover: hover) {
   .toTopButton:hover:focus:active {
     background-color: #1f1d1d;

@@ -380,6 +380,14 @@ footer {
   font-size: 25px; /* Increase font size */
 }
 
+.topButtonIcon {
+  border: solid $base-color;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(-135deg);
+}
+
 @media (hover: hover) {
   .toTopButton:hover:focus:active {
     background-color: $secondary-color; /* Add a dark-grey background on hover */
