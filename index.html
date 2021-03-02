@@ -4,24 +4,57 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap&family=Nunito:wght@400;700"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="Leandro Moscheni professional site. In this site you can find information about Leandro and his carer as a software engineer."
     />
+    <meta
+      name="keywords"
+      content="Software Engineer, Full Stack Developer, Frontend Engineer, Backend Engineer"
+    />
+    <meta name="author" content="Leandro N Moscheni" />
+
+    <meta name="copyright" content="Leandro N Moscheni" />
+    <meta name="robots" content="index" />
+    <meta http-equiv="expires" content="86400" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+    <link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@400;700&display=swap"
+      rel="style"
+    />    
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+      media="print" 
+      onload="this.media='all'"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       crossorigin="anonymous"
+      async
     />
+
     <link
       rel="icon"
       href="./assets/16x16v2.png"
       sizes="16x16"
       type="image/png"
     />
-    <script src="./js/index.js"></script>
+    <script src="./js/index.min.js"></script>
+
+    <title>Leandro Moscheni</title>
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -36,7 +69,7 @@
 
       gtag("config", "G-C017P46QEH");
     </script>
-    <title>Leandro Moscheni</title>
+
   </head>
   <body>
     <header>
@@ -52,12 +85,17 @@
               <a
                 href="https://www.linkedin.com/in/leandromoscheni/"
                 target="_blank"
+                rel="noopener"
               >
                 <i class="fab fa-linkedin fa-2x"></i>
               </a>
             </li>
             <li class="hide-on-mobile">
-              <a href="https://www.github.com/lmoscheni" target="_blank">
+              <a
+                href="https://www.github.com/lmoscheni"
+                target="_blank"
+                rel="noopener"
+              >
                 <i class="fab fa-github fa-2x"></i>
               </a>
             </li>
@@ -72,12 +110,12 @@
           <p>I'm Leandro, a Software Engineer dedicated to web development.</p>
           <p>
             I am currently working at
-            <a href="https://www.despegar.com">Despegar</a> as a Senior Software
-            Engineer, building applications to after-sale support.
+            <a href="https://www.despegar.com" rel="noopener">Despegar</a> as a
+            Senior Software Engineer, building applications to after-sale
+            support.
           </p>
         </div>
         <img
-          class="profile-picture"
           src="./assets/300x400v2.png"
           alt="profile picture"
         />
@@ -215,25 +253,42 @@
               method="POST"
               onsubmit="return validateForm()"
             >
-              <label name="name"> Your name </label>
+              <!-- <label name="name"> Your name </label>
               <input type="text" name="name" maxlength="30" required />
 
               <label name="_replyto"> Your email </label>
-              <input type="text" name="_replyto" maxlength="45" required />
+              <input type="text" name="_replyto" maxlength="45" required /> -->
+               <label name="name"> Your name <br/> <input type="text" name="name" maxlength="30" required /></label>
+              
 
-              <label name="message"> Your message </label>
-              <textarea
+              <label name="_replyto"> Your email <br/> <input type="text" name="_replyto" maxlength="45" required />
+              </label>
+
+              <label name="message"> Your message <br/> <textarea
                 name="message"
                 maxlength="750"
                 minlength="30"
                 required
               ></textarea>
+             </label>
+              
+              
+
+              <!-- <label name="message"> Your message </label>
+              <textarea
+                name="message"
+                maxlength="750"
+                minlength="30"
+                required
+              ></textarea> -->
 
               <button type="submit">Send</button>
             </form>
           </div>
           <div class="map-container">
             <iframe
+              title="Bs As Location"
+              loading="lazy"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.26483370336!2d-58.503338475504414!3d-34.61580373610127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1613246264851!5m2!1ses!2sar"
               width="auto"
               height="auto"
@@ -258,12 +313,17 @@
             <a
               href="https://www.linkedin.com/in/leandromoscheni/"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-linkedin fa-3x"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.github.com/lmoscheni" target="_blank">
+            <a
+              href="https://www.github.com/lmoscheni"
+              target="_blank"
+              rel="noopener"
+            >
               <i class="fab fa-github fa-3x"></i>
             </a>
           </li>
