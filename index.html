@@ -20,20 +20,18 @@
 
     <link rel="stylesheet" href="./css/main.min.css" />
 
-    <link rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@400;700&display=swap"
       rel="style"
-    />    
-    
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@400;700&display=swap"
       rel="stylesheet"
-      media="print" 
+      media="print"
       onload="this.media='all'"
     />
 
@@ -54,7 +52,7 @@
     <script src="./js/index.min.js"></script>
 
     <title>Leandro Moscheni</title>
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -69,7 +67,6 @@
 
       gtag("config", "G-C017P46QEH");
     </script>
-
   </head>
   <body>
     <header>
@@ -115,10 +112,7 @@
             support.
           </p>
         </div>
-        <img
-          src="./assets/300x400v2.png"
-          alt="profile picture"
-        />
+        <img src="./assets/300x400v2.png" alt="profile picture" />
       </div>
       <section id="about" class="about">
         <h1>About</h1>
@@ -253,35 +247,25 @@
               method="POST"
               onsubmit="return validateForm()"
             >
-              <!-- <label name="name"> Your name </label>
-              <input type="text" name="name" maxlength="30" required />
+              <label name="name">
+                Your name <br />
+                <input type="text" name="name" maxlength="30" required
+              /></label>
 
-              <label name="_replyto"> Your email </label>
-              <input type="text" name="_replyto" maxlength="45" required /> -->
-               <label name="name"> Your name <br/> <input type="text" name="name" maxlength="30" required /></label>
-              
-
-              <label name="_replyto"> Your email <br/> <input type="text" name="_replyto" maxlength="45" required />
+              <label name="_replyto">
+                Your email <br />
+                <input type="text" name="_replyto" maxlength="45" required />
               </label>
 
-              <label name="message"> Your message <br/> <textarea
-                name="message"
-                maxlength="750"
-                minlength="30"
-                required
-              ></textarea>
-             </label>
-              
-              
-
-              <!-- <label name="message"> Your message </label>
-              <textarea
-                name="message"
-                maxlength="750"
-                minlength="30"
-                required
-              ></textarea> -->
-
+              <label name="message">
+                Your message <br />
+                <textarea
+                  name="message"
+                  maxlength="750"
+                  minlength="30"
+                  required
+                ></textarea>
+              </label>
               <button type="submit">Send</button>
             </form>
           </div>
