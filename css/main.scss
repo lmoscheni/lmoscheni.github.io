@@ -69,14 +69,15 @@ header {
 
   .nav-bar {
     width: 100%;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     margin: 0.2rem 1rem;
 
     .logo {
       font-family: "Lobster", cursive;
       font-size: 2rem;
       display: inline-block;
-      margin-left: 0 0.4rem 0 0;
+      margin: 0 0.4rem 0 0;
 
       a {
         text-decoration: inherit;
@@ -257,6 +258,41 @@ footer {
 }
 
 @media (max-width: $tablet-size) {
+  .menu-btn-container {
+    // display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 0.4rem 0 0;
+    // float: right;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: flex-center;
+      // align-items: center;
+
+      li {
+        // font-size: 1.2em;
+        // font-weight: bold;
+        // margin: 2em;
+
+        // a {
+        //   text-decoration: inherit;
+        //   color: inherit;
+        //   cursor: pointer;
+
+        //   &:hover {
+        //     color: $accent-color;
+        //   }
+        // }
+      }
+    }
+  }
+
   section {
     margin-bottom: 3.5rem !important;
     h1 {
