@@ -259,37 +259,15 @@ footer {
 
 @media (max-width: $tablet-size) {
   .menu-btn-container {
-    // display: inline-block;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin: 0 0.4rem 0 0;
-    // float: right;
     ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
       display: inline-block;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: flex-center;
-      // align-items: center;
-
-      li {
-        // font-size: 1.2em;
-        // font-weight: bold;
-        // margin: 2em;
-
-        // a {
-        //   text-decoration: inherit;
-        //   color: inherit;
-        //   cursor: pointer;
-
-        //   &:hover {
-        //     color: $accent-color;
-        //   }
-        // }
-      }
     }
   }
 
