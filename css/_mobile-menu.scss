@@ -7,7 +7,7 @@
   width: 70%;
   left: 30%;
   z-index: 2;
-  background-color: rgba(238, 238, 238, 0.95);
+  background-color: rgba(238, 238, 238, 0.98);
 
   .menu-items {
     margin: 0;
@@ -66,8 +66,8 @@
     height: 4px;
     background: black;
     border-radius: 2px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
     transition: all 0.5s ease-in-out;
+    box-shadow: 0 2px 5px rgba(107, 107, 107, 0.2);
 
     &::before,
     &::after {
@@ -77,8 +77,8 @@
       height: 4px;
       background: black;
       border-radius: 2px;
-      box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
       transition: all 0.5s ease-in-out;
+      box-shadow: 0 2px 5px rgba(107, 107, 107, 0.2);
     }
 
     &::before {

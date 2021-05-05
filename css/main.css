@@ -5,7 +5,7 @@
   width: 70%;
   left: 30%;
   z-index: 2;
-  background-color: rgba(238, 238, 238, 0.95);
+  background-color: rgba(238, 238, 238, 0.98);
 }
 
 .menu .menu-items {
@@ -84,10 +84,10 @@
   height: 4px;
   background: black;
   border-radius: 2px;
-  -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0 2px 5px rgba(107, 107, 107, 0.2);
+          box-shadow: 0 2px 5px rgba(107, 107, 107, 0.2);
 }
 
 .menu-btn .menu-btn__burger::before, .menu-btn .menu-btn__burger::after {
@@ -97,10 +97,10 @@
   height: 4px;
   background: black;
   border-radius: 2px;
-  -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0 2px 5px rgba(107, 107, 107, 0.2);
+          box-shadow: 0 2px 5px rgba(107, 107, 107, 0.2);
 }
 
 .menu-btn .menu-btn__burger::before {
@@ -198,8 +198,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 340px;
-  margin: 3em 1em 0 1em;
+  margin: 2rem 1rem 0 1rem;
 }
 
 .contact .container .form-container form {
@@ -215,6 +214,7 @@
           justify-content: center;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
+  width: 345px;
 }
 
 .contact .container .form-container form .invalid-input {
@@ -237,13 +237,12 @@
 .contact .container .form-container form label {
   font-weight: bold;
   margin-bottom: 0.2em;
-  width: 345px;
   line-height: 1.7rem;
 }
 
 .contact .container .form-container form input,
 .contact .container .form-container form textarea {
-  width: 98.6%;
+  width: 98.5%;
   margin-bottom: 1em;
   border: 1px solid #d1d1d1;
   border-radius: 0.5em;
@@ -258,11 +257,12 @@
 }
 
 .contact .container .map-container {
-  width: 100%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin: 2em 1em 0 1em;
+  min-width: 340px;
+  min-height: 370px;
+  margin: 2rem 1rem 0 1rem;
 }
 
 .contact .container .map-container iframe {
