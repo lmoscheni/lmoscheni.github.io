@@ -45,10 +45,29 @@
       justify-content: space-around;
     }
   }
-
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .menu.open {
   display: block;
+  animation: fadeIn 0.3s;
 }
 
 .menu-btn {

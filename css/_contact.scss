@@ -11,13 +11,16 @@
         display: flex;
         justify-content: center;
         margin: 2rem 1rem 0 1rem;
+        padding: 0;
+        width: 345px;
   
         form {
+          width: 100%;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-content: space-around;
-          width: 345px;
+          
   
           .invalid-input {
             border-bottom: 1px solid red;
@@ -37,15 +40,18 @@
           }
           
           label {
+            width: 100%;
+            padding:0;
+            margin: 0;
             font-weight: bold;
-            margin-bottom: 0.2em;
-            line-height: 1.7rem;
+            line-height: 1.7em;
           }
   
           input,
           textarea {
-            width: 98.5%;
-            margin-bottom: 1em;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0 0 1em 0;
             border: 1px solid rgb(209, 209, 209);
             border-radius: 0.5em;
           }
