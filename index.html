@@ -18,7 +18,7 @@
     <meta name="robots" content="index" />
     <meta http-equiv="expires" content="86400" />
 
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -49,7 +49,7 @@
       sizes="16x16"
       type="image/png"
     />
-    <script src="./js/index.min.js"></script>
+    <script src="./js/index.js"></script>
 
     <title>Leandro Moscheni</title>
 
@@ -74,11 +74,21 @@
         <div class="logo">
           <a href="/"> <span class="logo-init">L</span>Moscheni </a>
         </div>
-        <div class="nav-items">
+        <div class="nav-items hide-on-middle-and-big-screen">
+          <ul>
+            <li>
+              <div id="menu-btn" class="menu-btn">
+                <div class="menu-btn__burger"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-items hide-on-mobile">
           <ul>
             <li><a href="#about"> About </a></li>
+            <li><a href="#portfolio"> Portfolio </a></li>
             <li><a href="#contact"> Contact </a></li>
-            <li class="hide-on-mobile">
+            <li>
               <a
                 href="https://www.linkedin.com/in/leandromoscheni/"
                 target="_blank"
@@ -87,7 +97,7 @@
                 <i class="fab fa-linkedin fa-2x"></i>
               </a>
             </li>
-            <li class="hide-on-mobile">
+            <li>
               <a
                 href="https://www.github.com/lmoscheni"
                 target="_blank"
@@ -100,6 +110,31 @@
         </div>
       </nav>
     </header>
+    <div id="menu" class="hide-on-middle-and-big-screen menu">
+      <div class="menu-items">
+        <ul>
+          <li><a href="#about"> About </a></li>
+          <li><a href="#portfolio"> Portfolio </a></li>
+          <li><a href="#contact"> Contact </a></li>
+          <li class="social-options">
+            <a
+              href="https://www.linkedin.com/in/leandromoscheni/"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a
+            href="https://www.github.com/lmoscheni"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="container">
       <div class="hero">
         <div class="hero-description">
@@ -236,6 +271,39 @@
           </details>
         </section>
       </section>
+      <section id="portfolio" class="portfolio">
+        <h1>Portfolio</h1>
+        <p>
+          In this section you can find some example projects developed by me, to
+          show you how I work. In all of the items you have two links, one for
+          access to source code on github and the other to acces a live demo.
+        </p>
+        <div class="projects-container">
+          <div class="project-card">
+            <h3>Weather app</h3>
+            <p>
+              Challenge: Create a weather app using an API. Use Front-end
+              libraries like React or Vue.
+            </p>
+            <div class="project-links">
+              <button class="go-live-demo-btn">
+                <a
+                  href="https://weather-app-sigma-two.vercel.app/"
+                  target="_blank"
+                  >Live demo
+                </a>
+              </button>
+              <button class="go-code-btn">
+                <a
+                  href="https://github.com/lmoscheni/weather-app"
+                  target="_blank"
+                  ><i class="fas fa-code"></i
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="contact" class="contact">
         <h1>Contact me</h1>
         <h2>Contact Form</h2>
@@ -286,8 +354,8 @@
         </div>
       </section>
     </div>
-    <button class="toTopButton" onclick="topFunction()" id="toTopButton">
-      <div class="topButtonIcon"></div>
+    <button class="to-top-button" onclick="topFunction()" id="toTopButton">
+      <div class="top-button-icon"></div>
     </button>
     <footer>
       <div class="social-contact">
@@ -315,5 +383,8 @@
       </div>
       <p>©2021 Leandro Moscheni | All rights reserved.</p>
     </footer>
+    <script>
+      listenMenuButton();
+    </script>
   </body>
 </html>

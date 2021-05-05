@@ -1,0 +1,105 @@
+@import "./_variables.scss";
+
+.menu {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 70%;
+  left: 30%;
+  z-index: 2;
+  background-color: rgba(238, 238, 238, 0.95);
+
+  .menu-items {
+    margin: 0;
+    padding: 0;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-center;
+      align-items: center;
+
+      li {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin: 2em;
+
+        a {
+          text-decoration: inherit;
+          color: inherit;
+          cursor: pointer;
+
+          &:hover {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+
+    .social-options {
+      width: 70%;
+      display: flex !important;
+      justify-content: space-around;
+    }
+  }
+
+}
+.menu.open {
+  display: block;
+}
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  .menu-btn__burger {
+    width: 20px;
+    height: 4px;
+    background: black;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background: black;
+      border-radius: 2px;
+      box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+      transition: all 0.5s ease-in-out;
+    }
+
+    &::before {
+      transform: translateY(-9px);
+    }
+
+    &::after {
+      transform: translateY(9px);
+    }
+  }
+}
+
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}

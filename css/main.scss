@@ -1,6 +1,9 @@
-$base-color: #eee;
-$secondary-color: rgb(31, 29, 29);
-$accent-color: #815ab3;
+@import "./_variables.scss";
+@import "./_mobile-menu.scss";
+@import "./_to-top-button.scss";
+
+@import "./_contact.scss";
+@import "./_portfolio.scss";
 
 html,
 body {
@@ -209,82 +212,6 @@ header {
   }
 }
 
-.contact {
-  width: 100%;
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    .form-container {
-      display: flex;
-      justify-content: center;
-      margin: 2rem 1rem 0 1rem;
-
-      form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: space-around;
-        width: 350px;
-
-        .invalid-input {
-          border-bottom: 1px solid red;
-        }
-
-        button {
-          padding: 0.7em;
-          border-radius: 0.5em;
-          border: none;
-          color: $base-color;
-          font-weight: bold;
-          background-color: $accent-color;
-        }
-
-        button:hover {
-          background-color: rgba(31, 29, 29, 0.76);
-        }
-
-        label {
-          font-weight: bold;
-          margin-bottom: 0.2em;
-          width: 345px;
-          line-height: 1.7rem;
-        }
-
-        input,
-        textarea {
-          width: 100%;
-          margin-bottom: 1em;
-          border: 1px solid rgb(209, 209, 209);
-          border-radius: 0.5em;
-        }
-
-        input {
-          height: 2.2em;
-        }
-
-        textarea {
-          height: 10em;
-        }
-      }
-    }
-
-    .map-container {
-      flex-grow: 1;
-      min-width: 350px;
-      min-height: 370px;
-      margin: 2rem 1rem 0 1rem;
-
-      iframe {
-        width: 100%;
-        height: 100%;
-        border-radius: 1rem;
-      }
-    }
-  }
-}
-
 footer {
   color: $base-color;
   padding: 1.5rem;
@@ -323,7 +250,13 @@ footer {
   }
 }
 
-@media (max-width: 550px) {
+@media (min-width: $tablet-size) {
+  .hide-on-middle-and-big-screen {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-size) {
   section {
     margin-bottom: 3.5rem !important;
     h1 {
@@ -349,7 +282,7 @@ footer {
     margin-left: 1em !important;
     margin-right: 1em !important;
   }
-  
+
   .contact {
     .container {
       .form-container {
@@ -363,36 +296,5 @@ footer {
         margin-right: 3rem !important;
       }
     }
-  }
-}
-
-.toTopButton {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  width: 55px;
-  height: 55px;
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: $accent-color; /* Set a background color */
-  color: $base-color; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  border-radius: 50%; /* Rounded corners */
-  font-size: 25px; /* Increase font size */
-}
-
-.topButtonIcon {
-  border: solid $base-color;
-  border-width: 0 5px 5px 0;
-  display: inline-block;
-  padding: 5px;
-  transform: rotate(-135deg);
-}
-
-@media (hover: hover) {
-  .toTopButton:hover:focus:active {
-    background-color: $secondary-color; /* Add a dark-grey background on hover */
   }
 }
