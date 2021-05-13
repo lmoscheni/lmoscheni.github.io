@@ -2,6 +2,7 @@
 @import "./_mobile-menu.scss";
 @import "./_to-top-button.scss";
 
+@import "./_about.scss";
 @import "./_contact.scss";
 @import "./_portfolio.scss";
 
@@ -77,7 +78,6 @@ header {
       font-family: "Lobster", cursive;
       font-size: 2rem;
       display: inline-block;
-      margin: 0 0.4rem 0 0;
 
       a {
         text-decoration: inherit;
@@ -175,42 +175,6 @@ header {
       color: $accent-color;
     }
   }
-
-  .about {
-    summary {
-      padding: 1em;
-      border-radius: 0.5em;
-      color: $base-color;
-      background-color: rgba(31, 29, 29, 0.911);
-      font-weight: bold;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-      margin-bottom: 1em;
-      outline: none;
-      cursor: pointer;
-
-      &:hover {
-        background-color: rgb(129, 90, 179);
-      }
-    }
-
-    details[open] summary ~ * {
-      animation: sweep 0.5s ease-in-out;
-    }
-
-    @keyframes sweep {
-      from {
-        opacity: 0;
-        margin-top: -10px;
-      }
-
-      to {
-        opacity: 1;
-        margin-top: 0;
-      }
-    }
-  }
 }
 
 footer {
@@ -297,7 +261,6 @@ footer {
       .form-container {
         min-width: 300px !important;
       }
-
       .map-container {
         min-width: 300px !important;
         iframe {
