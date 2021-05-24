@@ -3,15 +3,14 @@
 .to-top-button {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
+    box-sizing: border-box;
     width: 55px;
     height: 55px;
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
+    z-index: 9; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: $accent-color; /* Set a background color */
-    color: $base-color; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     border-radius: 50%; /* Rounded corners */
     font-size: 25px; /* Increase font size */
@@ -23,6 +22,7 @@
     display: inline-block;
     padding: 5px;
     transform: rotate(-135deg);
+    box-sizing: border-box;
   }
   
   @media (hover: hover) {

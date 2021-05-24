@@ -2,7 +2,10 @@
 
 .menu {
   display: none;
-  position: absolute;
+
+  position: sticky;
+  top: 42px;
+  
   height: 100vh;
   width: 70%;
   left: 30%;
@@ -33,7 +36,7 @@
           cursor: pointer;
 
           &:hover {
-            color: $accent-color;
+            @extend .fth-tc;
           }
         }
       }
@@ -76,24 +79,26 @@
   justify-content: center;
   align-items: center;
   margin: 0;
+  width: 50px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 
   .menu-btn__burger {
+    @extend .white-bc;
     width: 20px;
-    height: 4px;
-    background: black;
+    height: 3px;
     border-radius: 2px;
     transition: all 0.5s ease-in-out;
     box-shadow: 0 2px 5px rgba(107, 107, 107, 0.2);
 
     &::before,
     &::after {
+      @extend .white-bc;
+
       content: "";
       position: absolute;
       width: 30px;
-      height: 4px;
-      background: black;
+      height: 3px;
       border-radius: 2px;
       transition: all 0.5s ease-in-out;
       box-shadow: 0 2px 5px rgba(107, 107, 107, 0.2);
@@ -115,9 +120,11 @@
   background: transparent;
   box-shadow: none;
 }
+
 .menu-btn.open .menu-btn__burger::before {
   transform: rotate(45deg) translate(35px, -35px);
 }
+
 .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
 }

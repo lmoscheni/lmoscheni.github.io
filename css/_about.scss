@@ -1,0 +1,20 @@
+.about {
+  summary {
+    padding: 1em;
+    border-radius: 0.5em;
+    color: $base-color;
+    background-color: rgba(31, 29, 29, 0.911);
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 1em;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      // background-color: rgb(129, 90, 179);
+      @extend .fst-bc;
+    }
+  }
+}
