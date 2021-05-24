@@ -1,0 +1,71 @@
+.career {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  h1, p {
+    width: 100%;
+  }
+
+  p {
+    margin-bottom: 3rem;
+  }
+
+  .image {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      display: inline-block;
+      width: 75%;
+      border-radius: 15px;
+    }
+  }
+  
+  .info {
+    width: 50%;
+    summary {
+      padding: 1em;
+      border-radius: 0.5em;
+      color: $base-color;
+      background-color: rgba(31, 29, 29, 0.911);
+      font-weight: bold;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-bottom: 1em;
+      outline: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $accent-color;
+      }
+    }
+
+    details[open] summary ~ * {
+      padding-left: 1em;
+      animation: sweep 0.5s ease-in-out;
+    }
+
+    @keyframes sweep {
+      0% {
+        opacity: 0;
+        margin-top: -10px;
+      }
+      50% {
+        opacity: 0.5;
+        margin-top: -5px;
+      }
+      100% {
+        opacity: 1;
+        margin-top: 0;
+      }
+    }
+  }
+}
