@@ -86,6 +86,7 @@
         <div class="nav-items hide-on-mobile">
           <ul>
             <li><a href="#about"> About </a></li>
+            <li><a href="#career"> Career </a></li>
             <li><a href="#portfolio"> Portfolio </a></li>
             <li><a href="#contact"> Contact </a></li>
             <li>
@@ -114,6 +115,7 @@
       <div class="menu-items">
         <ul>
           <li><a href="#about"> About </a></li>
+          <li><a href="#career"> Career </a></li>
           <li><a href="#portfolio"> Portfolio </a></li>
           <li><a href="#contact"> Contact </a></li>
           <li class="social-options">
@@ -146,12 +148,17 @@
             building applications to after-sale support.
           </p>
         </div>
-        <img src="./assets/300x400v2.png" alt="profile picture" />
+        <img
+          src="./assets/A039378F-40AE-40EF-9333-997B94F0AE2E.JPG"
+          alt="profile picture"
+        />
       </div>
       <section id="about" class="about">
         <h1>About</h1>
-        <section>
-          <h2>Intro</h2>
+        <div class="image hide-on-mobile">
+          <img src="./assets/IMG_0340.jpg" alt="Buenos Aires City picture" />
+        </div>
+        <div class="content">
           <p>
             I'm Leandro and I'm 27. I'm born in Buenos Aires, Argentina and I
             live here until now.
@@ -175,16 +182,20 @@
             And finally, I have to say that I love to talk! Both in my personal
             and professional life a good communication it's essential.
           </p>
-        </section>
-        <section>
-          <h2>Experience</h2>
-          <p>
-            As Software Engineer I had to face to many and varied projects, from
-            the backend of a credit risk system, to the frontend of an OOT
-            application as direcTV play.
-          </p>
+        </div>
+      </section>
+      <section id="career" class="career">
+        <h1>Career</h1>
+        <p>
+          As Software Engineer I had to face to many and varied projects, from
+          the backend of a credit risk system, to the frontend of an OOT
+          application as direcTV play.
+        </p>
+        <div class="info">
           <details>
-            <summary>Despegar | Sr. Software Engineer - Changes Non Air</summary>
+            <summary>
+              Despegar | Sr. Software Engineer - Changes Non Air
+            </summary>
             <div class="content">
               <h3>From May 2020 until now</h3>
               <p>
@@ -210,7 +221,7 @@
             </div>
           </details>
           <details>
-            <summary>Despegar | Mid Software Engineer - MOT </summary>
+            <summary>Despegar | Mid Software Engineer - MOT</summary>
             <div class="content">
               <h3>From January 2018 until March 2019</h3>
               <p>
@@ -225,7 +236,7 @@
             </div>
           </details>
           <details>
-            <summary>Toolbox | Mid Software Engineer - Unity </summary>
+            <summary>Toolbox | Mid Software Engineer - Unity</summary>
             <div class="content">
               <h3>From June 2017 until December 2017</h3>
               <p>
@@ -268,7 +279,13 @@
               </p>
             </div>
           </details>
-        </section>
+        </div>
+        <div class="image hide-on-mobile">
+          <img
+            src="./assets/FullSizeRender.jpg"
+            alt="Computer with code image"
+          />
+        </div>
       </section>
       <section id="portfolio" class="portfolio">
         <h1>Portfolio</h1>
@@ -305,11 +322,6 @@
       </section>
       <section id="contact" class="contact">
         <h1>Contact me</h1>
-        <p>
-          You can contact me through the contact form for any job opportunity.
-        </p>
-        <p>I'm currently living in the City of Buenos Aires.</p>
-        <h2>Contact Form</h2>
         <div class="container">
           <div class="form-container">
             <form
@@ -341,6 +353,11 @@
             </form>
           </div>
           <div class="map-container">
+            <p>
+              You can contact me through the contact form for any job
+              opportunity.
+            </p>
+            <p>I'm currently living in the City of Buenos Aires.</p>
             <iframe
               title="Bs As Location"
               loading="lazy"
@@ -357,9 +374,6 @@
         </div>
       </section>
     </div>
-    <button class="to-top-button" onclick="topFunction()" id="toTopButton">
-      <div class="top-button-icon"></div>
-    </button>
     <footer>
       <div class="social-contact">
         <h2>Social media</h2>

@@ -1,39 +1,26 @@
 .about {
-    summary {
-      padding: 1em;
-      border-radius: 0.5em;
-      color: $base-color;
-      background-color: rgba(31, 29, 29, 0.911);
-      font-weight: bold;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-      margin-bottom: 1em;
-      outline: none;
-      cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
-      &:hover {
-        background-color: rgb(129, 90, 179);
-      }
-    }
+  h1 {
+    width: 100%;
+  }
 
-    details[open] summary ~ * {
-      padding-left: 1em;
-      animation: sweep 0.5s ease-in-out;
-    }
+  .content {
+    width: 60%;
+  }
 
-    @keyframes sweep {
-      0% {
-        opacity: 0;
-        margin-top: -10px;
-      }
-      50% {
-        opacity: 0.5;
-        margin-top: -5px;
-      }
-      100% {
-        opacity: 1;
-        margin-top: 0;
-      }
+  .image {
+    width: 40%;
+
+    img {
+      display: inline-block;
+      width: 80%;
+      border-radius: 15px;
     }
   }
+}

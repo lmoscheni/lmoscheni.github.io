@@ -2,9 +2,10 @@
 @import "./_mobile-menu.scss";
 @import "./_to-top-button.scss";
 
-@import "./_about.scss";
-@import "./_contact.scss";
-@import "./_portfolio.scss";
+@import "./about";
+@import "./career";
+@import "./contact";
+@import "./portfolio";
 
 html,
 body {
@@ -62,17 +63,23 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
+
   margin: 0;
   padding: 0;
   width: 100%;
   display: flex;
   align-items: center;
 
+  z-index: 99;
+  background-color: #eee;
+
   .nav-bar {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 0.2rem 1rem;
+    margin: 0 4rem;
 
     .logo {
       font-family: "Lobster", cursive;
@@ -127,7 +134,7 @@ header {
 }
 
 .container {
-  margin: 2rem;
+  margin: 2rem 4rem;
   padding: 0;
 
   .hero {
@@ -169,6 +176,10 @@ header {
     h1 {
       font-size: 2rem;
       margin-bottom: 1em;
+
+      &::first-letter {
+        color: $accent-color;
+      }
     }
 
     h2::first-letter {
@@ -232,6 +243,33 @@ footer {
       margin: 0;
       padding: 0;
       display: inline-block;
+    }
+  }
+
+  .nav-bar {
+    margin: 0 1rem !important;
+  }
+
+  .container {
+    margin: 0 1rem !important;
+  }
+
+  .about {
+    .content {
+      width: 100%;
+    }
+  }
+
+  .career {
+    p {
+      margin-bottom: 1rem;
+    }
+    .info {
+      width: 100%;
+    }
+
+    .image {
+      display: none;
     }
   }
 
